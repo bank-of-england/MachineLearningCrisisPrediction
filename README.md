@@ -45,5 +45,6 @@ In the analysis folder, the files _analysis_cross_validation.R_ and _analysis_fo
 
 The Excel sheet _visual_params.xlsx_ in the analysis folder specifies visual characteristics of the plots. The user can alter the name, colour, or symbol of algorithms and variables shown in the charts.
 
-
+# Disclaimer
+This package is an outcome of a research project. All errors are mine. All views expressed are personal views, not those of any employer.
 
