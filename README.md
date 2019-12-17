@@ -7,21 +7,23 @@ In the paper, we develop early warning models for financial crisis prediction us
 
 The dataset we use is the [Jordà-Schularick-Taylor Macrohistory Database](http://www.macrohistory.net/data/). We accessed the data using [this link](http://www.macrohistory.net/JST/JSTdatasetR3.xlsx).  
 
-This repository does _not_ include all results of the experiments but rather a subset of the results. The remaining results can be requested from the authors. 
+This repository does _not_ include all results of the experiments. Rather, it contains a small subset of the results to illustrate the empirical methodology and the implementation. 
 
 Should you have any questions or spot a bug in the code, please email to marcus.buckmann@bankofengland.co.uk or raise an issue within the repository.
 
-__Link to the paper__: XXX
+# Link to the paper: XXX
 
 
-# Requirements 
+# Prerequisites 
 The code has been developed and used under Python 3.6.5, Anaconda distribution and R 3.5.1. 
 
-The file R script _R_installer.R_ in the setup folder installs all necessary R packages.
-The file _python_env.yml_ in the setup folder contains the Anaconda virtual environment under which the experiments were run.
+The file R script _R_installer.R_ in the _setup_ folder installs all necessary R packages.
+The file _python_env.yml_ in the _setup_ folder contains the Anaconda virtual environment under which the experiments were run.
  
 
-# Running the experiments 
+# Running the code
+
+## Running the out-ofsample experiments 
 
 The paper is based on two main empirical experiments: cross-validation and forecasting. These experiments are run using the respective Python scripts in the experiments folder.
 In these files, the user can specify the models to be trained, the variables to be included, and how the variables should be transformed. The results are then written in the _results_ folder. The _pickle_ files in this folder contain all the results of the individual iterations. Each iteration uses a random seed and therefore partitions the data into training and test sets differently. 
@@ -38,8 +40,7 @@ The _data[...].txt_ contains the dataset that is used in the experiment. This is
 - The files _se_fold[...].txt_ and _se_iter[...].txt_ show the standard errors of the respective performance results.
 
 
-# Producing charts and estimating Shapley regressions ####
-
+## Analyising the results 
 The analysis and the regressions are conducted in _R_ and are based on the _.txt_ files in the results folder.
 In the analysis folder, the files _analysis_cross_validation.R_ and _analysis_forecasting.R_ produce charts and regression models for the two types of experiments.
 
