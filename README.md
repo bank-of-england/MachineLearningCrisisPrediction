@@ -11,7 +11,6 @@ This repository does _not_ include all results of the experiments. Rather, it co
 
 Should you have any questions or spot a bug in the code, please email to marcus.buckmann@bankofengland.co.uk or raise an issue within the repository.
 
-# Link to the paper: XXX
 
 
 # Prerequisites 
