@@ -7,6 +7,9 @@ In the paper, we develop early warning models for financial crisis prediction us
 
 The dataset we use is the [Jordà-Schularick-Taylor Macrohistory Database](http://www.macrohistory.net/data/) . It is published under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://www.macrohistory.net/data/licence-terms/). We accessed [version 3](http://www.macrohistory.net/JST/JSTdatasetR3.xlsx) from the dataset's [website](http://www.macrohistory.net/data/). Theis version is contained in the _data_ folder of this repository.  
 
+
+The code is not intended as a stand-alone package. It is can be used to reproduce the results in the paper However, parts of it may be transfered to other applications. No warranty is given. Please consult the licence file.
+
 This repository does _not_ include all results of the experiments. Rather, it contains a small subset of the results to illustrate the empirical methodology and the implementation. 
 
 Should you have any questions or spot a bug in the code, please email to marcus.buckmann@bankofengland.co.uk or raise an issue within the repository.
