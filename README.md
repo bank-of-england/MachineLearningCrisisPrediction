@@ -27,7 +27,7 @@ The file _python_env.yml_ in the _setup_ folder specifies the Anaconda virtual e
 ## Running the out-of-sample experiments 
 
 The paper is based on two main empirical experiments: cross-validation and forecasting. These experiments are run using the respective Python scripts in the _experiments_ folder.
-In these scripts, the user can specify the models to be trained, the variables to be included, and how the variables should be transformed. The results of the experiments are written to the _results_ folder. The _pickle_ files in this folder contain all the results of the individual iterations. Each iteration uses a random seed and therefore partitions the data into training and test sets differently. 
+In these scripts, the user can specify the models to be trained, the variables to be included, and how the variables should be transformed. The results of the experiments are written to the _results_ folder. To obtain stable perfomance estimates, we repeat the experiments many times. For this repository, we repeated the 5-fold cross-validation 10 times. Each _pickle_ files in the _results_ folder contain the results of one iterations. Each iteration uses a random seed and therefore partitions the data into training and test sets differently. 
 
 The experiments do not need to be run at once. The user can terminate the experiments after a certain number of iterations and open a new Python session at another point in time. Then new pickle files will be added to the folder and will be merged with the previous experiments. 
 The _.txt_ files in the results folder are written based on the information contained in all the _pickle_ files. 
