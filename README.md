@@ -23,8 +23,7 @@ The file _python_env.yml_ in the _setup_ folder specifies the Anaconda virtual e
 
 # Structure of the code
 
-## Running the models
-
+## Estimating the prediction models
 The paper is based on two main empirical experiments: cross-validation and forecasting. These experiments are run using the respective Python scripts in the _experiments_ folder.
 In these scripts, the user can specify the models to be trained, the variables to be included, and how the variables should be transformed. The results of the experiments are written to the _results_ folder. To obtain stable perfomance estimates, we repeat the experiments many times. For this repository, we repeated the 5-fold cross-validation 10 times. Each _pickle_ files in the _results_ folder contain the results of one iterations. Each iteration uses a random seed and therefore partitions the data into training and test sets differently. 
 
