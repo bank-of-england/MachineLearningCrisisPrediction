@@ -1,4 +1,4 @@
-# Code for the BOE SWP 848
+# Code for the Bank of England Staff Working Paper 848
 
 This repository includes the code used in the [Bank of England Staff Working Paper 848](http::/) "__Credit Growth, the Yield Curve and Financial Crisis Prediction: Evidence from a Machine Learning Approach__" by Kristina Bluwstein, Marcus Buckmann, Andreas Joseph, Miao Kang, Sujit Kapadia, and Özgür Şimşek. 
 
