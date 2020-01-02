@@ -17,7 +17,7 @@ from operator import itemgetter
 from sklearn.metrics import roc_auc_score
 from sklearn.model_selection import RandomizedSearchCV
 from sklearn.model_selection import GridSearchCV
-from sklearn.linear_model import SGDClassifier
+from sklearn.linear_model import LogisticRegression
 from scipy.stats import mstats
 import statsmodels.formula.api as smf
 
@@ -38,7 +38,7 @@ def shapley_kernel_wrapper(model, trainx, testx, config):
         # print(background.shape)
 
         explainer = shap.KernelExplainer(model.predict_proba, background)
-        if isinstance(model, SGDClassifier):  # one background instance is enough if we use a linear model
+        if isinstance(model, LogisticRegression):  # one background instance is enough if we use a linear model
             background = shap.kmeans(trainx, 1)
             backup_base = explainer.fnull
             explainer = shap.KernelExplainer(model.predict_proba, background)

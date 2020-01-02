@@ -101,7 +101,7 @@ def gaussianprocess(data, config, name, **kwargs):
 def logreg(data, config, sample_weight, name, **kwargs):
     # Logistic regression
     
-    model = LogisticRegression()
+    model = LogisticRegression(penalty="none", solver = "lbfgs")
     model_instance = PredictionModel(model, name, data, config,
                                      sample_weight = sample_weight)
     return model_instance.output
