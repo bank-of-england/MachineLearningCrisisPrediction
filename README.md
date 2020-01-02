@@ -24,7 +24,7 @@ The file _python_env.yml_ in the _setup_ folder specifies the Anaconda virtual e
 
 # Running the code
 
-## Running the out-ofsample experiments 
+## Running the out-of-sample experiments 
 
 The paper is based on two main empirical experiments: cross-validation and forecasting. These experiments are run using the respective Python scripts in the experiments folder.
 In these files, the user can specify the models to be trained, the variables to be included, and how the variables should be transformed. The results are then written in the _results_ folder. The _pickle_ files in this folder contain all the results of the individual iterations. Each iteration uses a random seed and therefore partitions the data into training and test sets differently. 
