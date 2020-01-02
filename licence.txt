@@ -1,4 +1,4 @@
-Code for the Bank of England Staff Working Paper XXX "Credit Growth,
+Code for the Bank of England Staff Working Paper 848 "Credit Growth,
 the Yield Curve and Financial Crisis Prediction: Evidence from a 
 Machine Learning Approach"
 
