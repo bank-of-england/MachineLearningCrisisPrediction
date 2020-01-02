@@ -25,7 +25,7 @@ The file _python_env.yml_ in the _setup_ folder specifies the Anaconda virtual e
 
 ## Estimating the prediction models
 The paper is based on two main empirical experiments: cross-validation and forecasting. These experiments are run using the respective Python scripts in the _experiments_ folder.
-In these scripts, the user can specify the models to be trained, the variables to be included, and how the variables should be transformed. The results of the experiments are written to the _results_ folder. To obtain stable perfomance estimates, we repeat the experiments many times. For this repository, we repeated the 5-fold cross-validation 10 times. Each _pickle_ files in the _results_ folder contain the results of one iterations. Each iteration uses a random seed and therefore partitions the data into training and test sets differently. 
+In these scripts, the user can specify the models to be trained, the variables to be included, and how the variables should be transformed. The results of the experiments are written to the _results_ folder. To obtain stable perfomance estimates, we repeat the experiments many times. For this repository, we repeated the 5-fold cross-validation 10 times. Each _pickle_ file in the _results_ folder contains the results of one iteration. Each iteration uses a different random seed and therefore partitions the data into a training and test set differently. 
 
 The experiments do not need to be run at once. The user can terminate the experiments after a certain number of iterations and rerun the experiments at another point in time. Then, new pickle files will be added to the folder.
 The _.txt_ files in the results folder are written based on the information contained in all the _pickle_ files. They are updated after each iteration.
@@ -41,7 +41,7 @@ The _data[...].txt_ contains the dataset that is used in the experiment. This is
 
 ## Analyising the results 
 The analysis and the regressions are conducted in _R_ and are based on the _.txt_ files in the results folder.
-In the analysis folder, the files _analysis_cross_validation.R_ and _analysis_forecasting.R_ produce charts and regression models for the two types of experiments.
+In the _analysis_ folder, the files _analysis_cross_validation.R_ and _analysis_forecasting.R_ produce charts and regression models for the two types of experiments.
 
 The Excel sheet _visual_params.xlsx_ in the analysis folder specifies visual characteristics of the plots. The user can alter the name, colour, or symbol of algorithms and variables shown in the charts.
 
