@@ -2,11 +2,10 @@
 
 This repository includes the code used in the [Bank of England Staff Working Paper 848](http::/) "__Credit Growth, the Yield Curve and Financial Crisis Prediction: Evidence from a Machine Learning Approach__" by Kristina Bluwstein, Marcus Buckmann, Andreas Joseph, Miao Kang, Sujit Kapadia, and Özgür Şimşek. 
 
-In the paper, we develop early warning models for financial crisis prediction using machine learning techniques applied to macrofinancial data for 17 countries over 1870-2016. Machine learning models typically outperform logistic regression in out-of-sample prediction and forecasting experiments. We identify economic drivers of our machine learning models using a novel framework based on Shapley values, uncovering nonlinear relationships between the predictors and the risk of crisis.  Across all models, the most important predictors are credit growth and the slope of the yield curve, both domestically and globally. 
+In the paper, we develop early warning models for financial crisis prediction using machine learning techniques applied to macrofinancial data for 17 countries over 1870-2016. Machine learning models typically outperform logistic regression in out-of-sample prediction and forecasting experiments. We identify economic drivers of our machine learning models using a novel framework based on [Shapley values](https://bankunderground.co.uk/2019/05/24/opening-the-machine-learning-black-box/), uncovering nonlinear relationships between the predictors and the risk of crisis.  Across all models, the most important predictors are credit growth and the slope of the yield curve, both domestically and globally. 
 
 
 The dataset we use is the [Jordà-Schularick-Taylor Macrohistory Database](http://www.macrohistory.net/data/). It is published under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://www.macrohistory.net/data/licence-terms/). We accessed [Version 3](http://www.macrohistory.net/JST/JSTdatasetR3.xlsx) from the dataset's [website](http://www.macrohistory.net/data/). This version is contained in the _data_ folder of this repository.  
-
 
 The code is not intended as a stand-alone package. It is can be used to reproduce the results in the paper. Parts of it may be transfered to other applications. No warranty is given. Please consult the licence file.
 
@@ -29,8 +28,8 @@ The file _python_env.yml_ in the _setup_ folder specifies the Anaconda virtual e
 The paper is based on two main empirical experiments: cross-validation and forecasting. These experiments are run using the respective Python scripts in the _experiments_ folder.
 In these scripts, the user can specify the models to be trained, the variables to be included, and how the variables should be transformed. The results of the experiments are written to the _results_ folder. To obtain stable perfomance estimates, we repeat the experiments many times. For this repository, we repeated the 5-fold cross-validation 10 times. Each _pickle_ files in the _results_ folder contain the results of one iterations. Each iteration uses a random seed and therefore partitions the data into training and test sets differently. 
 
-The experiments do not need to be run at once. The user can terminate the experiments after a certain number of iterations and open a new Python session at another point in time. Then new pickle files will be added to the folder and will be merged with the previous experiments. 
-The _.txt_ files in the results folder are written based on the information contained in all the _pickle_ files. 
+The experiments do not need to be run at once. The user can terminate the experiments after a certain number of iterations and rerun the experiments at another point in time. Then, new pickle files will be added to the folder.
+The _.txt_ files in the results folder are written based on the information contained in all the _pickle_ files. They are updated after each iteration.
 
 The key files in the results folder are the following:
 The _data[...].txt_ contains the dataset that is used in the experiment. This is not the raw dataset, rather all transformations and exclusions of data points have been applied.
