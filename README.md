@@ -11,7 +11,7 @@ The code is not intended as a stand-alone package. It can be used to reproduce t
 
 This repository does _not_ include all results of the experiments. Rather, it contains a small subset of the results to illustrate the empirical methodology and the implementation. 
 
-Should you have any questions or spot a bug in the code, please email to marcus.buckmann@bankofengland.co.uk or raise an issue within the repository.
+Should you have any questions or spot a bug in the code, please send an email to marcus.buckmann@bankofengland.co.uk or raise an issue within the repository.
 
 
 # Prerequisites 
