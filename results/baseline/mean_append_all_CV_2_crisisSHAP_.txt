@@ -1,0 +1,3 @@
+	auc	accura	balanc	tprate	fprate	tp	tn	fp	fn	iter
+extree	0.873	0.932	0.567	0.137	0.003	13.0	1151.0	3.0	82.0	10
+logreg	0.82	0.924	0.553	0.116	0.01	11.0	1143.0	11.0	84.0	10

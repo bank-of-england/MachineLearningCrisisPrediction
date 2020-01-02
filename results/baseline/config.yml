@@ -1,0 +1,41 @@
+!!python/object:configure.Config
+data_exclude_extreme_period: true
+data_horizon: 2
+data_include_crisis_year: false
+data_period: all
+data_post_crisis: 4
+data_predictors:
+- drate
+- cpi_pdiff
+- bmon_gdp_rdiff
+- stock_pdiff
+- cons_pdiff
+- pdebt_gdp_rdiff
+- inv_gdp_rdiff
+- ca_gdp_rdiff
+- tloan_gdp_rdiff
+- tdbtserv_gdp_rdiff
+- global_loan
+- global_drate
+data_years_pre_crisis: 2
+exp_algos:
+- extree
+- logreg
+exp_bootstrap: 'no'
+exp_bootstrap_replace: 'no'
+exp_do_shapley: true
+exp_do_upsample: false
+exp_error_costs: '0.5'
+exp_hyper_folds: 5
+exp_id: crisis
+exp_n_iter_rsearch: 250
+exp_n_kernels: 7
+exp_nfolds: 5
+exp_optimization_metric: roc_auc
+exp_rep_cv: 1
+exp_search: grid
+exp_shap_background: 50
+exp_shapley_interaction: false
+exp_verbose: 0
+exp_year_split: null
+r_path: null
