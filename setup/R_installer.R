@@ -1,4 +1,6 @@
-# This script installs all R packages required to reproduce the results in the SWP XXX.
+# SUPPLEMENTARY CODE FOR BOE SWP 848: 
+# Credit Growth, the Yield Curve and Financial Crisis Prediction: Evidence from a Machine Learning Approach 
+# This script installs all R packages required to reproduce the results.
 install.packages("devtools")
 # packages and their versions used
 packages <- list(
@@ -20,10 +22,3 @@ lapply(packages, function(package) install.packages(package[1],
                                                     version = package[2],
                                                     repos = "http://cran.us.r-project.org"
                                                     ))
-
-
-package <- packages[[3]]
-install.packages(package[1],
-                 
-                 repos = "http://cran.us.r-project.org"
-)

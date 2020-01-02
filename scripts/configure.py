@@ -1,3 +1,10 @@
+"""
+
+SUPPLEMENTARY CODE FOR BOE SWP XXX: 
+Credit Growth, the Yield Curve and Financial Crisis Prediction: Evidence from a Machine Learning Approach 
+
+"""
+
 import numpy as np
 import hashlib
 

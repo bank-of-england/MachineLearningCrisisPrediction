@@ -1,7 +1,7 @@
 # SUPPLEMENTARY CODE FOR BOE SWP 848: 
 # Credit Growth, the Yield Curve and Financial Crisis Prediction: Evidence from a Machine Learning Approach 
 
-# This script colelcts the results of the cross-validation experiments and produces figures.
+# This script collects the results of the forecasting experiments and produces figures.
 
 source("utils_analysis.R")
 library(grDevices)

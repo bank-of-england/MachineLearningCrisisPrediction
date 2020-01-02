@@ -1,3 +1,10 @@
+# SUPPLEMENTARY CODE FOR BOE SWP 848: 
+# Credit Growth, the Yield Curve and Financial Crisis Prediction: Evidence from a Machine Learning Approach 
+
+# This script contains helper functions that are used when estimating machine learning models in R. 
+
+
+
 getWeightsFromCost <- function(costs,prior){
   # given the costs of the classes and the proportion of the classes in the data (prior)
   # this fucntion calculates the weights of the observations

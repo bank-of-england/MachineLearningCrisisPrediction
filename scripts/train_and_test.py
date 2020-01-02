@@ -1,8 +1,8 @@
 """
-SUPPLEMENTARY CODE FOR BOE SWP XXX: 
+SUPPLEMENTARY CODE FOR BOE SWP 848: 
 Credit Growth, the Yield Curve and Financial Crisis Prediction: Evidence from a Machine Learning Approach 
 
-This script provides contains the low-level experiment functions
+This script contains the functions that conduct the cross-validation and forecasting experiments.
 """
 
 import sys

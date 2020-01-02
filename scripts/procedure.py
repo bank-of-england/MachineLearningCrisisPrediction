@@ -1,3 +1,9 @@
+"""
+SUPPLEMENTARY CODE FOR BOE SWP 848: 
+Credit Growth, the Yield Curve and Financial Crisis Prediction: Evidence from a Machine Learning Approach 
+"""
+
+
 from make_data import *
 from train_and_test import *
 import xarray as xr
@@ -104,7 +110,6 @@ class Procedure:
         self.config.exp_nrep = len(self.results)
 
 
-
     def _collect_results(self):
         """Read the results from the pickles of the individual iterations saved on the hard drive
         and adds results to self.results"""
@@ -121,10 +126,10 @@ class Procedure:
                     self._add_results(o_old)
                     
         if not all_same([i["predictions"].shape for i in self.results]):
-            raise ValueError("You try to merge results of different experiments. This is not possible. ")
+            raise ValueError("You try to merge results of different experiments. This is not possible.")
         
         if not all_same([set(i["predictions"].columns) for i in self.results]): # results of different sizes are merged
-                    raise ValueError("You try to merge results of different models. This is not possible. ")
+                    raise ValueError("You try to merge results of different models. This is not possible.")
                 
     
 

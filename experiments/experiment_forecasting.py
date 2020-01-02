@@ -1,3 +1,12 @@
+"""
+
+SUPPLEMENTARY CODE FOR BOE SWP 848: 
+Credit Growth, the Yield Curve and Financial Crisis Prediction: Evidence from a Machine Learning Approach 
+
+This script produces performance results and the Shapley value decomposition for the forecasting experiment.
+
+"""
+
 import os, sys
 import multiprocessing
 # Set the main directory of the project

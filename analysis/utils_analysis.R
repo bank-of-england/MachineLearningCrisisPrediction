@@ -1,3 +1,9 @@
+# SUPPLEMENTARY CODE FOR BOE SWP 848: 
+# Credit Growth, the Yield Curve and Financial Crisis Prediction: Evidence from a Machine Learning Approach 
+
+# This script provides utility functions for analysing the results.
+# It also sets the visual characsteristics of the plot as specified in the Excel sheet visual_params.xlsx
+
 #### VISUAL PARAMETERS ####
 vis_features <- openxlsx::read.xlsx("visual_params.xlsx", sheet = 1)
 vis_models <- openxlsx::read.xlsx("visual_params.xlsx", sheet = 2)

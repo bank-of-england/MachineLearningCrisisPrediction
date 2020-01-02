@@ -1,5 +1,5 @@
 """
-SUPPLEMENTARY CODE FOR BOE SWP XXX: 
+SUPPLEMENTARY CODE FOR BOE SWP 848: 
 Credit Growth, the Yield Curve and Financial Crisis Prediction: Evidence from a Machine Learning Approach 
 
 This script loads the Jorda-Schularick-Taylor Macrohistry database and transforms the variables.

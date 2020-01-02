@@ -3,7 +3,7 @@
 SUPPLEMENTARY CODE FOR BOE SWP 848: 
 Credit Growth, the Yield Curve and Financial Crisis Prediction: Evidence from a Machine Learning Approach 
 
-This script produces performance results and the Shapley vlaue decomposition for the cross-validation experiment.
+This script produces performance results and the Shapley value decomposition for the cross-validation experiment.
 
 """
 
