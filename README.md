@@ -28,7 +28,7 @@ The paper is based on two main empirical experiments: cross-validation and forec
 In these scripts, the user can specify the models to be trained, the variables to be included, and how the variables should be transformed. The results of the experiments are written to the _results_ folder. To obtain stable perfomance estimates, we repeat the experiments many times. For this repository, we repeated the 5-fold cross-validation 10 times. Each _pickle_ file in the _results_ folder contains the results of one iteration. Each iteration uses a different random seed and therefore partitions the data into a training and test set differently. 
 
 The experiments do not need to be run at once. The user can terminate the experiments after a certain number of iterations and rerun the experiments at another point in time. Then, new pickle files will be added to the folder.
-The _.txt_ files in the results folder are written based on the information contained in all the _pickle_ files. They are updated after each iteration.
+The _.txt_ files in the _results_ folder are written based on the information contained in all the _pickle_ files. They are updated after each iteration.
 
 The key files in the results folder are the following:
 The _data[...].txt_ contains the dataset that is used in the experiment. This is not the raw dataset, rather all transformations and exclusions of data points have been applied.
@@ -43,7 +43,7 @@ The _data[...].txt_ contains the dataset that is used in the experiment. This is
 The analysis and the regressions are conducted in _R_ and are based on the _.txt_ files in the results folder.
 In the _analysis_ folder, the files _analysis_cross_validation.R_ and _analysis_forecasting.R_ produce charts and regression models for the two types of experiments.
 
-The Excel sheet _visual_params.xlsx_ in the analysis folder specifies visual characteristics of the plots. The user can alter the name, colour, or symbol of algorithms and variables shown in the charts.
+The Excel sheet _visual_params.xlsx_ in the _analysis_ folder specifies visual characteristics of the plots. The user can alter the name, colour, or symbol of algorithms and variables shown in the charts.
 
 # Disclaimer
 This package is an outcome of a research project. All errors are those of the authors. All views expressed are personal views, not those of any employer.
