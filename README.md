@@ -19,7 +19,7 @@ Should you have any questions or spot a bug in the code, please email to marcus.
 The code has been developed and used under Python 3.6.5, Anaconda distribution and R 3.5.1. 
 
 The file R script _R_installer.R_ in the _setup_ folder installs all necessary R packages.
-The file _python_env.yml_ in the _setup_ folder contains the Anaconda virtual environment under which the experiments were run.
+The file _python_env.yml_ in the _setup_ folder specifies the Anaconda virtual environment under which the experiments were run.
  
 
 # Running the code
