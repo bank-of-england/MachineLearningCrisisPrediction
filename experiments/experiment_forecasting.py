@@ -54,13 +54,18 @@ config.exp_n_kernels = multiprocessing.cpu_count() - 1 # number of CPU kernels u
 
 df = create_data(config)  # creates the dataset according to the configuration
 
+"""
+In the forecasting experiments, we split the data into a training set and a testset. 
+All observations in the years < config_ex_year_split are assigned to the training set,
+all later observations are assigned to the test set. 
+"""
+
 min_crisis = 20  # minimum number of crises observations in the training set, before the forecasting starts
 f, yearsplits = create_forecasting_folds(df["crisis"], df["year"], min_crisis=min_crisis)
-# yearsplits = [y for y in yearsplits if y > 1990]
 
 for year in yearsplits: # the year reflects the last year in the training set
     config.exp_year_split = year
-    for i in np.arange(5): # repeat experiment 5 times
+    for i in np.arange(5): # repeat experiment 5 times, each training set will be different do to the upsampling (config.exp_bootstrap)
         o = Procedure(config, df_in=df,
                        folder="results/forecasting_" + config.exp_bootstrap + "/",
                        save_data=max(yearsplits) == year)
