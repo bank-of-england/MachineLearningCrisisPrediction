@@ -7,19 +7,16 @@ This script produces performance results and the Shapley value decomposition for
 
 """
 
-
 import os, sys
 import multiprocessing
 
 # Set the main directory of the project
-main_directory = "\\\\mafp-nwsrv\\data\\Advanced Analytics\\_People\Marcus Buckmann\\crisis_prediction\\public_code\\"
+main_directory = "your_path"
 os.chdir(main_directory)
-# main_directory = "your/path"
 sys.path.insert(1, main_directory +'\\scripts')
-# import models
+# import modules that were written for this project
 from configure import *
 from procedure import *
-
 """
 We first create an instance of the Config class. This instance contains all the 
 parameters of the empirical experiments, such as the proportion of the sample used 
@@ -51,7 +48,7 @@ config.data_predictors = ["drate", "cpi_pdiff", "bmon_gdp_rdiff", "stock_pdiff",
 config.exp_do_shapley = True  # whether we want to estimate Shapley values
 config.exp_n_kernels = multiprocessing.cpu_count() - 1 # number of CPU kernels used in parallel
 
-df = create_data(config)
-for i in np.arange(10): # repeat experiment 10 times
+df = create_data(config) # creates the dataset according to the configuration
+for i in np.arange(10): # repeat the cross-validation experiment 10 times
     o = Procedure(config, df_in=df, folder="results/baseline/")
 

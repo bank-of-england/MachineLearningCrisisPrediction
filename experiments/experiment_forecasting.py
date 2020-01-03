@@ -10,15 +10,10 @@ This script produces performance results and the Shapley value decomposition for
 import os, sys
 import multiprocessing
 # Set the main directory of the project
-# os.chdir("\\\\mafp-nwsrv\\data\\Advanced Analytics\\_People\Marcus Buckmann\\crisis_prediction\\public_code\\")
-main_directory = "your/path"
+main_directory = "your_path"
 os.chdir(main_directory)
 sys.path.insert(1, main_directory +'\\scripts')
-
-
-sys.path.insert(1, 'scripts')
-
-# import models
+# import modules that were written for this project
 from configure import *
 from procedure import *
 
@@ -57,7 +52,7 @@ config.exp_do_shapley = False  # whether we want to estimate Shapley values
 config.exp_bootstrap = "up"  # we upsample all training sets
 config.exp_n_kernels = multiprocessing.cpu_count() - 1 # number of CPU kernels used in parallel
 
-df = create_data(config)  # create dataset
+df = create_data(config)  # creates the dataset according to the configuration
 
 min_crisis = 20  # minimum number of crises observations in the training set, before the forecasting starts
 f, yearsplits = create_forecasting_folds(df["crisis"], df["year"], min_crisis=min_crisis)
