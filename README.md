@@ -1,6 +1,6 @@
 # Code for the Bank of England Staff Working Paper 848
 
-This repository includes the code used in the [Bank of England Staff Working Paper 848](http::/) "__Credit Growth, the Yield Curve and Financial Crisis Prediction: Evidence from a Machine Learning Approach__" by Kristina Bluwstein, Marcus Buckmann, Andreas Joseph, Miao Kang, Sujit Kapadia, and Özgür Şimşek. 
+This repository includes the code used in the [Bank of England Staff Working Paper 848](http://www.bankofengland.co.uk/working-paper/2020/credit-growth-the-yield-curve-and-financial-crisis-prediction-evidence-from-a-machine-learning) "__Credit Growth, the Yield Curve and Financial Crisis Prediction: Evidence from a Machine Learning Approach__" by Kristina Bluwstein, Marcus Buckmann, Andreas Joseph, Miao Kang, Sujit Kapadia, and Özgür Şimşek. 
 
 In the paper, we develop early warning models for financial crisis prediction using machine learning techniques applied to macrofinancial data for 17 countries over 1870-2016. Machine learning models typically outperform logistic regression in out-of-sample prediction and forecasting experiments. We identify economic drivers of our machine learning models using a novel framework based on [Shapley values](https://bankunderground.co.uk/2019/05/24/opening-the-machine-learning-black-box/), uncovering nonlinear relationships between the predictors and the risk of crisis.  Across all models, the most important predictors are credit growth and the slope of the yield curve, both domestically and globally. 
 
