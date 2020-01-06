@@ -39,7 +39,7 @@ The _data[...].txt_ contains the dataset that is used in the experiment. This is
 - The files _se_fold[...].txt_ and _se_iter[...].txt_ show the standard errors of the respective performance results.
 
 
-## Analyising the results 
+## Analysing the results 
 The analyses of the files in the _results folder_ are conducted in ```R```. In the _analysis_ folder, the files _analysis_cross_validation.R_ and _analysis_forecasting.R_ produce charts and regression models for the two types of experiments. 
 
 The Excel sheet _visual_params.xlsx_ in the _analysis_ folder specifies visual characteristics of the plots. The user can alter the name, colour, and symbol of algorithms and variables shown in the charts.
